@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pl" class="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gra Memory</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      :root {
+        --color-primary-400: 96 165 250; /* sky-400 */
+        --color-primary-500: 59 130 246; /* sky-500 */
+        --color-primary-600: 37 99 235;  /* sky-600 */
+        
+        --color-bg: 241 245 249;      /* slate-100 */
+        --color-text: 15 23 42;       /* slate-900 */
+        --color-muted-text: 100 116 139; /* slate-500 */
+        --color-card-bg: 255 255 255;    /* white */
+        --color-card-face-bg: 241 245 249; /* slate-100 */
+      }
+      html.dark {
+        --color-bg: 15 23 42;        /* slate-900 */
+        --color-text: 226 232 240;   /* slate-200 */
+        --color-muted-text: 148 163 184; /* slate-400 */
+        --color-card-bg: 30 41 59;       /* slate-800 */
+        --color-card-face-bg: 51 65 85;  /* slate-700 */
+      }
+      body {
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        background-color: rgb(var(--color-bg));
+        color: rgb(var(--color-text));
+        transition: background-color 0.3s ease, color 0.3s ease;
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react/": "https://aistudiocdn.com/react@^19.1.1/",
+    "react": "https://aistudiocdn.com/react@^19.1.1",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.1.1/",
+    "@google/genai": "https://aistudiocdn.com/@google/genai@^1.21.0"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>
